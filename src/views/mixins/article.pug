@@ -3,5 +3,5 @@ mixin article(titleText, paragraphText, iconName)
     if iconName
       img(src=`assets/icons/icon-${iconName}.svg`, alt=`${iconName} icon`)
     h3.article__title= titleText
-    p.text= paragraphText
+    p.paragraph= paragraphText
     block

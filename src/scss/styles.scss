@@ -1,5 +1,20 @@
-body {
-  display: grid;
-  background-image: linear-gradient(to right, red, blue);
-  color: blue;
-}
+@import './config/variables';
+
+@import './base/base';
+
+@import './functions/px-to-rem';
+
+@import './mixins/desktop';
+@import './mixins/to-desktop';
+
+@import './layout/article';
+@import './layout/header';
+@import './layout/section';
+@import './layout/footer';
+@import './layout/main';
+
+@import './blocks/button';
+@import './blocks/links-list';
+@import './blocks/logo';
+@import './blocks/social-list';
+@import './blocks/title';

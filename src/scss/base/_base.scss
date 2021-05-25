@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body,
+h1,
+ul,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

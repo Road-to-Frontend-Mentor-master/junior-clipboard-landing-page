@@ -1,0 +1,21 @@
+:root {
+  --primary: rgb(38, 186, 164);
+  --primary-lighter: rgb(52, 228, 201);
+  --primary-darker: hsl(171, 66%, 35%);
+  --on-primary: #ffffff;
+  --secondary: hsl(233, 100%, 69%);
+  --secondary-lighter: hsl(233, 94%, 73%);
+  --secondary-darker: hsl(233, 60%, 58%);
+  --on-secondary: #ffffff;
+  --title: hsl(210, 10%, 33%);
+  --text: hsl(201, 11%, 66%);
+}
+
+$base-font-size: 16px;
+
+$primary-font: 'Bai Jamjuree', sans-serif;
+
+$transition-default: .2s;
+
+$mobile: 375px;
+$desktop: 1440px;

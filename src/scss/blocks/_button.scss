@@ -1,0 +1,40 @@
+.button {
+  padding: px-to-rem(12px) px-to-rem(16px);
+  border-radius: px-to-rem(25px);
+  border: none;
+  border-bottom: 3px solid;
+  display: inline-block;
+
+  @include to-desktop() {
+    width: 100%;
+  }
+
+  @include desktop() {
+    cursor: pointer;
+    transition: background-color $transition-default;
+  }
+  
+  &--primary {
+    border-bottom-color: var(--primary-darker);
+    background-color: var(--primary);
+    color: var(--on-primary);
+
+    @include desktop() {
+      &:hover {
+        background-color: var(--primary-lighter);
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    border-bottom-color: var(--secondary-darker);
+    
+    @include desktop() {
+      &:hover {
+        background-color: var(--secondary-lighter);
+      }
+    }
+  }
+}

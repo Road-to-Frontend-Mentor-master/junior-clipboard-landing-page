@@ -3,6 +3,7 @@ include ../mixins/section
 include ../mixins/button
 include ../mixins/image
 include ../mixins/download-buttons
+include ../mixins/logo
 
 doctype html
 html(lang="en")
@@ -10,7 +11,10 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Index
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="stylesheets/styles.css")
+    title Clipboard landing page
   body
     include index/header
     
