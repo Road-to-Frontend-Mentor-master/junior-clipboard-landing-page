@@ -1,0 +1,25 @@
+-
+  const links = [
+    'FAQs',
+    'Privacy Policy',
+    'Install Guide',
+    'Contact Us',
+    'Press Kit'
+  ]
+
+-
+  const mediaLinks = [
+    'facebook',
+    'twitter',
+    'instagram'
+  ]
+
+footer.footer
+  .footer__logo
+  ul.footer__links-list.links-list
+    each link in links
+      li.links-list__item: a.links-list__link(href="#")= link
+
+  ul.footer__social-list.social-list
+    each media in mediaLinks
+      li.social-list__item: a.social-list__link(href="#"): img(src=`assets/icons/icon-${media}.svg`, alt=`${media} icon`)

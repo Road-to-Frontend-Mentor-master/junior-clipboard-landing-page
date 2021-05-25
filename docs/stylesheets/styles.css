@@ -1,0 +1,1 @@
+body{display:grid;background-image:-webkit-gradient(linear, left top, right top, from(red), to(blue));background-image:-o-linear-gradient(left, red, blue);background-image:linear-gradient(to right, red, blue);color:blue}
