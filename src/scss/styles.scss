@@ -1,11 +1,11 @@
 @import './config/variables';
 
-@import './base/base';
-
 @import './functions/px-to-rem';
 
 @import './mixins/desktop';
 @import './mixins/to-desktop';
+
+@import './base/base';
 
 @import './layout/article';
 @import './layout/header';
@@ -18,3 +18,9 @@
 @import './blocks/logo';
 @import './blocks/social-list';
 @import './blocks/title';
+@import './blocks/buttons-container';
+@import './blocks/paragraph';
+@import './blocks/image';
+@import './blocks/icon';
+
+@import './utils/classes';

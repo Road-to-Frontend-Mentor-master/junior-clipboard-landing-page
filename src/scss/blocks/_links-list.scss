@@ -1,0 +1,13 @@
+.links-list {
+  margin-bottom: px-to-rem(48px);
+  
+  &__item {
+    margin-bottom: px-to-rem(20px);
+  }
+
+  &__link {
+    font-size: px-to-rem(18px);
+    line-height: 30px;
+    color: inherit;
+  }
+}

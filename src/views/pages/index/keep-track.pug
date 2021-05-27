@@ -1,6 +1,6 @@
 -
   const section = {
-    title: 'A history of your snippets',
+    title: 'Keep track of your snippets',
     paragraph: `Clipboard instantly stores any item you copy in the cloud,
     meaning you can access your snippets immediately on all your devices. Our
     Mac and iOS apps will help you organize everything.`
@@ -24,11 +24,11 @@
     }
   }
 
-+section(section.title, section.paragraph)
++section(section.title, section.paragraph, "section--keep-track")
   .columns.columns--two
     .image-container
-      +image("image-computer", "Mac computer")
+      +image("image-computer", "Mac computer", "image--mac")
     .flex-container
-      +article(articles.quickSearch.title, articles.quickSearch.paragraph)
-      +article(articles.iCloudSync.title, articles.iCloudSync.paragraph)
-      +article(articles.completeHistory.title, articles.completeHistory.paragraph)
+      +article(articles.quickSearch.title, articles.quickSearch.paragraph, "article--keep-track")
+      +article(articles.iCloudSync.title, articles.iCloudSync.paragraph, "article--keep-track")
+      +article(articles.completeHistory.title, articles.completeHistory.paragraph, "article--keep-track")

@@ -1,5 +1,5 @@
-mixin section(titleText, paragraphText)
-  section.section
+mixin section(titleText, paragraphText, extraClasses = '')
+  section(class=`section ${extraClasses}`.trimRight())
     h2.title.title--h2= titleText
-    p.paragraph= paragraphText
+    p.paragraph.section__paragraph= paragraphText
     block

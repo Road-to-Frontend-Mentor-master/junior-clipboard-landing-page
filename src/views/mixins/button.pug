@@ -1,2 +1,2 @@
-mixin button(label, type = 'primary')
-  a(href="#" class=`button button--${type}` download="#" role="button")= label
+mixin button(label, type = 'primary', extraClass = '')
+  a(href="#" class=`button button--${type} ${extraClass}`.trimRight() download="#" role="button")= label

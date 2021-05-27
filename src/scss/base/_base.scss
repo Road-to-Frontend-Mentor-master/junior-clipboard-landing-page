@@ -7,14 +7,25 @@ html {
 }
 
 body,
-h1,
+h1, h2, h3,
 ul,
 p {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body {
   font-family: $primary-font;
+
+  background-image: url(../assets/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+
+  @include to-desktop() {
+    text-align: center;
+  }
 }
 
 ul {
@@ -23,4 +34,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }

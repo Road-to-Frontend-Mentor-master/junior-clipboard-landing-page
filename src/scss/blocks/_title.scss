@@ -1,0 +1,18 @@
+.title {
+  color: var(--title);
+  font-weight: 600;
+
+  &--h1 {
+    margin-bottom: px-to-rem(10px);
+  }
+
+  &--h2 {
+    font-size: px-to-rem(28px);
+    margin-bottom: px-to-rem(12px);
+  }
+
+  &--h3 {
+    font-size: px-to-rem(24px);
+    margin-bottom: px-to-rem(8px);
+  }
+}

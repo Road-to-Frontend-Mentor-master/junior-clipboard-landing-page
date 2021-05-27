@@ -1,0 +1,18 @@
+.section {
+
+  &--access {
+    margin-bottom: px-to-rem(130px);
+  }
+
+  &--keep-track {
+    margin-bottom: px-to-rem(186px);
+  }
+
+  &--clipboard {
+    margin-bottom: px-to-rem(170px);
+  }
+
+  &__paragraph {
+    margin-bottom: px-to-rem(64px);
+  }
+}
