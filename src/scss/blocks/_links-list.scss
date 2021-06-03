@@ -1,13 +1,26 @@
 .links-list {
-  margin-bottom: px-to-rem(48px);
+  @include to-desktop() {
+    margin-bottom: px-to-rem(48px);
   
-  &__item {
-    margin-bottom: px-to-rem(20px);
+    &__item {
+      margin-bottom: px-to-rem(20px);
+    }
   }
 
   &__link {
     font-size: px-to-rem(18px);
     line-height: 30px;
     color: inherit;
+  }
+
+  @include desktop() {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: px-to-rem(30px);
+    row-gap: px-to-rem(12px);
+    
+    &__item {
+      width: px-to-rem(160px);
+    }
   }
 }

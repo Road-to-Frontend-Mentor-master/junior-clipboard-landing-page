@@ -4,15 +4,30 @@
 
   &--h1 {
     margin-bottom: px-to-rem(10px);
+
+    @include desktop() {
+      font-size: px-to-rem(64px);
+    }
   }
 
   &--h2 {
     font-size: px-to-rem(28px);
     margin-bottom: px-to-rem(12px);
+
+    @include desktop() {
+      font-size: px-to-rem(36px);
+    }
   }
 
   &--h3 {
     font-size: px-to-rem(24px);
     margin-bottom: px-to-rem(8px);
+  }
+
+  @include desktop() {
+    &--h1,
+    &--h2 {
+      text-align: center;
+    }
   }
 }

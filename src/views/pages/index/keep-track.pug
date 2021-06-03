@@ -7,28 +7,33 @@
   }
 
 -
-  const articles = {
-    quickSearch: {
-      title: 'Quick Search',
-      paragraph: `Easily search your snippets by content, category, web address,
-        application, and more.`
+  const keepTrackArticles = [
+    {
+      titleText: 'Quick Search',
+      paragraphText: `Easily search your snippets by content, category, web address,
+        application, and more.`,
+      extraClasses: "article--keep-track",
+      paragraphExtraClass: 'paragraph--smaller'
     },
-    iCloudSync: {
-      title: 'iCloud Sync',
-      paragraph: 'Instantly saves and syncs snippets across all your devices.'
+    {
+      titleText: 'iCloud Sync',
+      paragraphText: 'Instantly saves and syncs snippets across all your devices.',
+      extraClasses: "article--keep-track",
+      paragraphExtraClass: 'paragraph--smaller'
     },
-    completeHistory: {
-      title: 'Complete History',
-      paragraph: `Retrieve any snippets from the first moment you started using
-        the app.`
+    {
+      titleText: 'Complete History',
+      paragraphText: `Retrieve any snippets from the first moment you started using
+        the app.`,
+      extraClasses: "article--keep-track",
+      paragraphExtraClass: 'paragraph--smaller'
     }
-  }
+  ]
 
 +section(section.title, section.paragraph, "section--keep-track")
   .columns.columns--two
     .image-container
       +image("image-computer", "Mac computer", "image--mac")
-    .flex-container
-      +article(articles.quickSearch.title, articles.quickSearch.paragraph, "article--keep-track")
-      +article(articles.iCloudSync.title, articles.iCloudSync.paragraph, "article--keep-track")
-      +article(articles.completeHistory.title, articles.completeHistory.paragraph, "article--keep-track")
+    .articles-container
+      each article in keepTrackArticles
+        +article(article)

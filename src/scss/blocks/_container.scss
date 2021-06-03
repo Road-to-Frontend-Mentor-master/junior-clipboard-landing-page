@@ -1,0 +1,12 @@
+.container {
+  @include desktop() {
+    max-width: px-to-rem(1440px);
+    margin: auto;
+
+    &--footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

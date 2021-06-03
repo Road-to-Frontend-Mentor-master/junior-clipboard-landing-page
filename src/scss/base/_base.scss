@@ -22,9 +22,14 @@ body {
 
   background-image: url(../assets/images/bg-header-mobile.png);
   background-repeat: no-repeat;
+  background-size: contain;
 
   @include to-desktop() {
     text-align: center;
+  }
+
+  @include desktop() {
+    background-image: url(../assets/images/bg-header-desktop.png);
   }
 }
 

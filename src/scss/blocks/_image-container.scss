@@ -1,0 +1,5 @@
+.image-container {
+  @include desktop() {
+    margin-right: px-to-rem(110px);
+  }
+}

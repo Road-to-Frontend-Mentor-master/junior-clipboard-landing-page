@@ -5,29 +5,34 @@
   }
 
 -
-  const superchargeArticles = {
-    create: {
-      title: 'Create blacklists',
-      paragraph: `Ensure sensitive information never makes its way to your
+  const superchargeArticles = [
+    {
+      titleText: 'Create blacklists',
+      paragraphText: `Ensure sensitive information never makes its way to your
         clipboard by excluding certain sources.`,
-      iconName: 'blacklist'
+      iconName: 'blacklist',
+      paragraphExtraClass: 'paragraph--smaller',
+      extraClasses: 'article--supercharge'
     },
-    plain: {
-      title: 'Plain text snippets',
-      paragraph: `Remove unwanted formatting from copied text for a
+    {
+      titleText: 'Plain text snippets',
+      paragraphText: `Remove unwanted formatting from copied text for a
         consistent look`,
-      iconName: 'text'
+      iconName: 'text',
+      paragraphExtraClass: 'paragraph--smaller',
+      extraClasses: 'article--supercharge'
     },
-    sneak: {
-      title: 'Sneak preview',
-      paragraph: `Quick preview of all snippets on your Clipboard for easy
+    {
+      titleText: 'Sneak preview',
+      paragraphText: `Quick preview of all snippets on your Clipboard for easy
         access`,
-      iconName: 'preview'
+      iconName: 'preview',
+      paragraphExtraClass: 'paragraph--smaller',
+      extraClasses: 'article--supercharge'
     }
-  }
+  ]
 
 +section(superchargeSection.title, superchargeSection.paragraph)
   .columns.columns--three
-    +article(superchargeArticles.create.title, superchargeArticles.create.paragraph, '', superchargeArticles.create.iconName)
-    +article(superchargeArticles.plain.title, superchargeArticles.plain.paragraph, '', superchargeArticles.plain.iconName)
-    +article(superchargeArticles.sneak.title, superchargeArticles.sneak.paragraph, '', superchargeArticles.sneak.iconName)
+    each article in superchargeArticles
+      +article(article)

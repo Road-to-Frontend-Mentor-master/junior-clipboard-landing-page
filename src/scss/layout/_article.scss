@@ -4,4 +4,12 @@
   &--keep-track {
     margin-bottom: px-to-rem(56px);
   }
+
+  &--supercharge {
+    text-align: center;
+  }
+
+  @include desktop() {
+    max-width: 350px;
+  }
 }

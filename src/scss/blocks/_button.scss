@@ -1,6 +1,6 @@
 .button {
   padding: px-to-rem(16px);
-  border-radius: px-to-rem(25px);
+  border-radius: px-to-rem(40px);
   border: none;
   border-bottom: 3px solid;
   display: inline-block;
@@ -14,6 +14,7 @@
   @include desktop() {
     cursor: pointer;
     transition: background-color $transition-default;
+    width: px-to-rem(270px);
   }
   
   &--primary {
@@ -25,8 +26,10 @@
     @include to-desktop() {
       margin-bottom: px-to-rem(24px);
     }
-
+    
     @include desktop() {
+      margin-right: px-to-rem(16px);
+      
       &:hover {
         background-color: var(--primary-lighter);
       }

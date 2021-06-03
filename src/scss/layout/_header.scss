@@ -1,8 +1,15 @@
 .header {
   margin-bottom: px-to-rem(160px);
   padding: px-to-rem(96px) px-to-rem(24px) 0;
-  
-  &__paragraph {
-    margin-bottom: px-to-rem(16px);
+
+  @include desktop() {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__paragraph {
+      max-width: px-to-rem(750px);
+      margin: auto;
+    }
   }
 }

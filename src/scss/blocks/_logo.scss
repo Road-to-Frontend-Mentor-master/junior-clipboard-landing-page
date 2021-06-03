@@ -1,7 +1,9 @@
 .logo {
-  margin-bottom: px-to-rem(64px);
+  &:not(&--footer) {
+    margin-bottom: px-to-rem(64px);
+  }
 
-  &--small {
+  &--footer {
     width: px-to-rem(55px);
   }
 }

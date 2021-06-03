@@ -1,7 +1,7 @@
-mixin article(titleText, paragraphText, extraClasses = '', iconName)
-  article.article
+mixin article({ titleText, paragraphText, extraClasses = '', iconName, paragraphExtraClass = '' })
+  article(class=`article ${extraClasses}`.trimRight())
     if iconName
       img.icon(src=`assets/icons/icon-${iconName}.svg`, alt=`${iconName} icon`)
     h3.title.title--h3= titleText
-    p.paragraph= paragraphText
+    p(class=`paragraph ${paragraphExtraClass}`.trimRight())= paragraphText
     block

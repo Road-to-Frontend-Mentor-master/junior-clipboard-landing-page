@@ -1,4 +1,13 @@
 .paragraph {
   color: var(--text);
   font-weight: 400;
+
+  @include desktop() {
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(30px);
+
+    &--smaller {
+      font-size: px-to-rem(16px);
+    }
+  }
 }
